@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="borderPane" prefHeight="767.0" prefWidth="1046.0" stylesheets="@../../css/design.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zavrsni.evidencijastudenata.Controller.NoviStanar">
+    <center>
+        <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #caf0f8;"
+              BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane>
+                    <children>
+                        <Label layoutX="700" layoutY="120.0" text="OIB"/>
+                        <Label layoutX="700.0" layoutY="160.0" text="JMBAG"/>
+                        <Label layoutX="700.0" layoutY="200.0" text="Ime"/>
+                        <Label layoutX="700.0" layoutY="240.0" text="Prezime"/>
+                        <Label layoutX="700.0" layoutY="280.0" text="Datum rođenja"/>
+                        <Label layoutX="700.0" layoutY="320.0" text="Adresa prebivališta"/>
+                        <Label layoutX="700.0" layoutY="360.0" text="Subvencioniranost"/>
+                        <Label layoutX="700.0" layoutY="400.0" text="Učilište"/>
+                        <Label layoutX="700.0" layoutY="440.0" text="Uplata teretane"/>
+                        <Label layoutX="700.0" layoutY="480.0" text="Komentar"/>
+                        <TextField fx:id="oibTextField" layoutX="1000.0" layoutY="120.0" promptText="OIB"/>
+                        <TextField fx:id="jmbagTextField" layoutX="1000.0" layoutY="160.0" promptText="JMBAG"/>
+                        <TextField fx:id="imeTextField" layoutX="1000.0" layoutY="200.0" promptText="Ime"/>
+                        <TextField fx:id="prezimeTextField" layoutX="1000.0" layoutY="240.0" promptText="Prezime"/>
+                        <TextField fx:id="adresaTextField" layoutX="1000.0" layoutY="320.0"
+                                   promptText="Adresa prebivališta"/>
+                        <DatePicker fx:id="datumRodenjaDatePicker" layoutX="1000.0" layoutY="276.0" prefHeight="25.0"
+                                    prefWidth="148.0" promptText="Datum rođenja"/>
+                        <TextField fx:id="ucilisteTextField" layoutX="1000.0" layoutY="400.0" promptText="Učilište"/>
+                        <TextArea fx:id="komentarTextArea" layoutX="1000.0" layoutY="480.0" prefHeight="200.0"
+                                  prefWidth="200.0" promptText="Komentar"/>
+                        <Button layoutX="900.0" layoutY="696.0" mnemonicParsing="false" onAction="#handleSetStanar"
+                                text="Unos"/>
+                        <CheckBox fx:id="subvencioniranostCheckBox" layoutX="1000.0" layoutY="360.0"
+                                  mnemonicParsing="false" text="Da"/>
+                        <CheckBox fx:id="uplataTeretaneCheckBox" layoutX="1000.0" layoutY="440.0"
+                                  mnemonicParsing="false"
+                                  text="Da"/>
+
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane fx:id="borderPane" prefHeight="767.0" prefWidth="1046.0" stylesheets="@../../css/design.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zavrsni.evidencijastudenata.Controller.NoviKvar">
+    <center>
+        <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #caf0f8;" BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="463.0" prefWidth="1046.0">
+                    <children>
+                        <Label layoutX="700.0" layoutY="71.0" text="Opis kvara"/>
+                        <Label layoutX="715.0" layoutY="257.0" text="Objekt"/>
+                        <TextArea fx:id="opisKvaraTextArea" layoutX="816.0" layoutY="43.0" prefHeight="200.0"
+                                  prefWidth="200.0"/>
+                        <Label layoutX="719.0" layoutY="303.0" text="Soba"/>
+                        <ChoiceBox fx:id="objektChoiceBox" layoutX="816.0" layoutY="253.0" prefWidth="150.0"/>
+                        <ChoiceBox fx:id="sobaChoiceBox" layoutX="816.0" layoutY="299.0" prefWidth="150.0"/>
+                        <Button layoutX="890.0" layoutY="362.0" mnemonicParsing="false" text="Unos"
+                                onAction="#handleSetKvar"/>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

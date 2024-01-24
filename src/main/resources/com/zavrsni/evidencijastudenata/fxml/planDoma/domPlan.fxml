@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="borderPane" prefHeight="767.0" prefWidth="1046.0" stylesheets="@../../css/design.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zavrsni.evidencijastudenata.Controller.PlanDoma">
+    <top>
+        <StackPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #caf0f8;"
+                   BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane>
+                    <children>
+                        <ChoiceBox fx:id="objektChoiceBox" layoutX="751.0" layoutY="106.0" prefWidth="150.0"/>
+                        <ChoiceBox fx:id="katChoiceBox" layoutX="1045.0" layoutY="106.0" prefWidth="150.0"/>
+                        <Label layoutX="812.0" layoutY="70.0" text="Objekt"/>
+                        <Label layoutX="1106.0" layoutY="70.0" text="Kat"/>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </top>
+    <center>
+        <AnchorPane style="-fx-background-color: #caf0f8;">
+
+        </AnchorPane>
+
+    </center>
+</BorderPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<BorderPane fx:id="borderPane" prefHeight="1038.0" prefWidth="1914.0" stylesheets="@../../css/design.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zavrsni.evidencijastudenata.Controller.SviTrenutniStanari">
+    <center>
+        <StackPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #caf0f8;"
+                   BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane prefHeight="855.0" prefWidth="1914.0">
+                    <children>
+                        <TableView fx:id="tableView" layoutX="14.0" layoutY="77.0" prefHeight="860.0"
+                                   prefWidth="1500.0">
+                            <columns>
+                                <TableColumn fx:id="oibColumn" prefWidth="100.0" text="OIB"/>
+                                <TableColumn fx:id="jmbagColumn" prefWidth="100.0" text="JMBAG"/>
+                                <TableColumn fx:id="imeColumn" prefWidth="150.0" text="Ime"/>
+                                <TableColumn fx:id="prezimeColumn" prefWidth="150.0" text="Prezime"/>
+                                <TableColumn fx:id="datumRodenjaColumn" prefWidth="125.0" text="Datum rođenja"/>
+                                <TableColumn fx:id="adresaPrebivalistaColumn" prefWidth="200.0"
+                                             text="Adresa prebivališta"/>
+                                <TableColumn fx:id="ucilisteColumn" prefWidth="200.0" text="Učilište"/>
+                                <TableColumn fx:id="subvencioniranostColumn" prefWidth="150.0"
+                                             text="Subvencioniranost"/>
+                                <TableColumn fx:id="teretanaColumn" prefWidth="125.0" text="Uplata teretane"/>
+                                <TableColumn fx:id="komentarColumn" prefWidth="200.0" text="Komentar"/>
+                            </columns>
+                        </TableView>
+                        <Button layoutX="14.0" layoutY="25.0" mnemonicParsing="false" text="Print"
+                                onAction="#handlePrintTable"/>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

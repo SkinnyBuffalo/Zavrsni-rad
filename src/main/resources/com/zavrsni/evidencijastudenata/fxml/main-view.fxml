@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="borderPane" stylesheets="@../css/design.css" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zavrsni.evidencijastudenata.EvidencijaStudenataController">
+    <top>
+        <ToolBar prefHeight="40.0" style="-fx-background-color: #4895ef;">
+            <items>
+                <ImageView fitHeight="60.0" fitWidth="60.0">
+                    <Image url="@../slike/studenstki_centar-removebg-preview.png"/>
+                </ImageView>
+
+                <MenuButton id="navigation-menu-button" text="Stanari" textFill="WHITE">
+                    <items>
+                        <MenuItem text="Novi stanar" onAction="#switchToNoviStanar"/>
+                        <MenuItem text="Useljenje" onAction="#switchToUseljenje"/>
+                        <MenuItem text="Iseljenje" onAction="#switchToIseljenje"/>
+                        <MenuItem text="Promijena podataka" onAction="#switchToPromijenaPodataka"/>
+                        <MenuItem text="Svi trenutni stanari" onAction="#switchToSviTrenutacniStanari"/>
+                        <MenuItem text="Stanari godine" onAction="#switchToStanariGodine"/>
+                    </items>
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </MenuButton>
+                <Button id="navigation-button" text="Plan doma" textFill="WHITE" onAction="#switchToDomPlan">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Button>
+                <MenuButton id="navigation-menu-button" text="Kvar" textFill="WHITE">
+                    <items>
+                        <MenuItem text="Novi kvar" onAction="#switchToNoviKvar"/>
+                        <MenuItem text="Prikaz trenutnih kvarova" onAction="#switchToTrenutniKvarovi"/>
+                    </items>
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </MenuButton>
+
+            </items>
+        </ToolBar>
+    </top>
+    <center>
+        <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #caf0f8;">
+            <Label style="-fx-font-size: 60px;" text="Evidencija Studenata"/>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:id="borderPane" prefHeight="767.0" prefWidth="1046.0" stylesheets="@../../css/design.css"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.zavrsni.evidencijastudenata.Controller.IzmjenaPodataka">
+    <center>
+        <StackPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #caf0f8;"
+                   BorderPane.alignment="CENTER">
+            <children>
+                <AnchorPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                            AnchorPane.topAnchor="0">
+                    <children>
+                        <Label layoutX="780.0" layoutY="119.0" text="OIB"/>
+                        <Label layoutX="776.0" layoutY="159.0" text="JMBAG"/>
+                        <Label layoutX="776.0" layoutY="199.0" text="Ime"/>
+                        <Label layoutX="776.0" layoutY="239.0" text="Prezime"/>
+                        <Label layoutX="776.0" layoutY="279.0" text="Datum rođenja"/>
+                        <Label layoutX="776.0" layoutY="319.0" text="Adresa prebivališta"/>
+                        <Label layoutX="776.0" layoutY="359.0" text="Subvencioniranost"/>
+                        <Label layoutX="776.0" layoutY="399.0" text="Učilište"/>
+                        <Label layoutX="776.0" layoutY="439.0" text="Uplata teretane"/>
+                        <Label layoutX="776.0" layoutY="479.0" text="Komentar"/>
+                        <TextField fx:id="oibTextField" layoutX="900.0" layoutY="119.0" promptText="OIB"/>
+                        <TextField fx:id="jmbagTextField" layoutX="900.0" layoutY="159.0" promptText="JMBAG"/>
+                        <TextField fx:id="imeTextField" layoutX="900.0" layoutY="199.0" promptText="Ime"/>
+                        <TextField fx:id="prezimeTextField" layoutX="900.0" layoutY="239.0" promptText="Prezime"/>
+                        <TextField fx:id="datumRodenjaTextField" layoutX="900.0" layoutY="279.0"
+                                   promptText="Datum rođenja"/>
+                        <TextField fx:id="adresaPrebivalistaTextField" layoutX="900.0" layoutY="319.0"
+                                   promptText="Adresa prebivališta"/>
+                        <TextField fx:id="ucilisteTextField" layoutX="900.0" layoutY="399.0" promptText="Učilište"/>
+                        <TextArea fx:id="komentarTextArea" layoutX="900.0" layoutY="479.0" prefHeight="200.0"
+                                  prefWidth="200.0" promptText="Komentar"/>
+                        <Button layoutX="900.0" layoutY="695.0" mnemonicParsing="false" onAction="#handleUpdateStanar"
+                                text="Unos"/>
+                        <CheckBox fx:id="subvencioniranostBox" layoutX="900.0" layoutY="359.0" mnemonicParsing="false"
+                                  text="Da"/>
+                        <CheckBox fx:id="teretanaBox" layoutX="900.0" layoutY="439.0" mnemonicParsing="false"
+                                  text="Da"/>
+                        <Button layoutX="1133.0" layoutY="119.0" mnemonicParsing="false"
+                                onAction="#handleGetStanarPoOibu" prefHeight="25.0" prefWidth="65.0" text="Pretraži"/>
+                    </children>
+                </AnchorPane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>
